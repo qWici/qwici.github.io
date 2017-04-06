@@ -61,13 +61,13 @@
 <body>
 
     <!-- preLoader -->
-    <!--<div id="loader-wrapper">-->
-        <!--<div id="loader"></div>-->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-        <!--<div class="loader-section section-left"></div>-->
-        <!--<div class="loader-section section-right"></div>-->
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
 
-    <!--</div>-->
+    </div>
     <!-- preLoader end -->
 
     <!-- HEADER -->
@@ -247,7 +247,7 @@
 
     <div class="container-fluid skills">
         <div class="row title-skills">
-            <h2>Skills</h2>
+            <h2>skills</h2>
             <div class="col-lg-6 col-lg-offset-3">
                 <p>I have over 4 years experience developing Web sites</p>
             </div>
@@ -258,7 +258,9 @@
                     <div class="meter col-lg-12">
                         <span style="width: 100%"></span>
                     </div>
-                    <h3>html & css</h3><span>100%</span>
+                    <div class="percent" style="width: 100%">
+                        <h3>html & css</h3><span>100%</span>
+                    </div>
                 </div>
                 <div class="col-lg-12 skill-percent">
                     <div class="meter col-lg-12">
@@ -291,6 +293,7 @@
                     <div class="percent" style="width: 65%">
                         <h3>node.js</h3><span>65%</span>
                     </div>
+                    <small>Studying now</small>
                 </div>
                 <div class="col-lg-12 skill-percent">
                     <div class="meter col-lg-12">
@@ -299,6 +302,7 @@
                     <div class="percent" style="width: 50%">
                         <h3>Angular</h3><span>50%</span>
                     </div>
+                    <small>Studying now</small>
                 </div>
             </div>
 
@@ -341,6 +345,41 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="container-fluid contact">
+        <div class="col-lg-2 col-lg-offset-3 title-contact">
+            <h2>Get in touch</h2>
+        </div>
+        <div class="col-lg-5 col-lg-offset-3">
+            <p>Wanna get in touch or talk to me about a project? <br>
+                Just fill the form below or send an email to dev.kucher@gmail.com</p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-3 lets-talk">
+            <form method="post" autocomplete="off" action="/">
+
+                <span class="col-xs-12 col-md-12 col-lg-12 input">
+                    <input type="text" class="col-xs-12 col-md-12" name="name" placeholder="Fill with your name">
+                </span>
+
+                <span class="col-lg-4 submit"><button>next</button></span>
+            </form>
+        </div>
+        <div class="col-lg-5 col-lg-offset-3 social-bottom">
+            <p>Let's get social? Follow my online profiles on VK, Twitter, Github and Linkedin.</p>
+            <ul>
+                <li><a href="#">Vk</a></li>
+                <li class="twitter"><a href="#">Twitter</a></li>
+                <li class="github"><a href="#">GitHub</a></li>
+                <li class="li"><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="video-wrapper">
+            <video autoplay loop muted poster="img/contact_bg.png" id="videobg">
+                <source src="img/video.mp4" type="video/mp4"></video>
+        </div>
+
     </div>
 
     <script src="js/typed.js"></script>
