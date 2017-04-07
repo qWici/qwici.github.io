@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Не твой вот ты и бесишся -->
+
 <head>
 
 	<meta charset="utf-8">
@@ -87,16 +89,16 @@
 
             <div class="col-lg-4 col-lg-push-3 top-menu">
                 <ul>
-                    <li><a href="#">about me</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">skills</a></li>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#skills">skills</a></li>
                 </ul>
             </div>
 
 
 
             <div class="col-lg-2 pull-right top-btn-touch">
-                <a href="#">Get in touch</a>
+                <a href="#contact">Get in touch</a>
             </div>
         </div>
 
@@ -187,7 +189,7 @@
                 <p>cup of coffee</p>
             </div>
             <div class="col-lg-2 block-stat">
-                <h5>7k</h5>
+                <h5>31000</h5>
                 <p>lines of code</p>
             </div>
         </div>
@@ -245,7 +247,7 @@
     </div>
 
 
-    <div class="container-fluid skills">
+    <div class="container-fluid skills" id="skills">
         <div class="row title-skills">
             <h2>skills</h2>
             <div class="col-lg-6 col-lg-offset-3">
@@ -255,7 +257,7 @@
         <div class="row">
             <div class="skills-percent col-lg-4 col-lg-offset-1">
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 html">
                         <span style="width: 100%"></span>
                     </div>
                     <div class="percent" style="width: 100%">
@@ -263,7 +265,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 js">
                         <span style="width: 95%"></span>
                     </div>
                     <div class="percent" style="width: 95%">
@@ -271,7 +273,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 php">
                         <span style="width: 73%"></span>
                     </div>
                     <div class="percent" style="width: 73%">
@@ -279,7 +281,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 bs">
                         <span style="width: 99%"></span>
                     </div>
                     <div class="percent" style="width: 99%">
@@ -287,7 +289,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 node">
                         <span style="width: 65%"></span>
                     </div>
                     <div class="percent" style="width: 65%">
@@ -296,7 +298,7 @@
                     <small>Studying now</small>
                 </div>
                 <div class="col-lg-12 skill-percent">
-                    <div class="meter col-lg-12">
+                    <div class="meter col-lg-12 angular">
                         <span style="width: 50%"></span>
                     </div>
                     <div class="percent" style="width: 50%">
@@ -318,7 +320,7 @@
                         <i class="fa fa-angle-down arrow-skill"></i>
                     </div>
                     <div class="content-skill">
-                        <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+                        <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
                     </div>
                 </div>
 
@@ -340,7 +342,7 @@
                         <i class="fa fa-angle-down arrow-skill"></i>
                     </div>
                     <div class="content-skill">
-                        <p>I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
+                        <p>I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap too.</p>
                     </div>
                 </div>
             </div>
@@ -348,7 +350,7 @@
     </div>
 
 
-    <div class="container-fluid contact">
+    <div class="container-fluid contact" id="contact">
         <div class="col-lg-2 col-lg-offset-3 title-contact">
             <h2>Get in touch</h2>
         </div>
@@ -400,7 +402,9 @@
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
-		{"src" : "js/parallax.min.js", "async" : false},
+		{"src" : "js/PageScroll2id.min.js", "async" : false},
+        {"src" : "http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js", "async" : false},
+		{"src" : "js/counterup.min.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
