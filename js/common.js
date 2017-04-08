@@ -57,24 +57,6 @@ $(document).ready(function () {
         }
     }
 
-    // Fill skill bars on waypoint
-    // var waypoints = $('.title-portfolio p').waypoint({
-    //     handler: function(direction) {
-    //         fillBar($('.html span'), 100);
-    //         fillBar($('.html + .percent'), 100);
-    //         fillBar($('.js span'), 95);
-    //         fillBar($('.js + .percent'), 95);
-    //         fillBar($('.php span'), 73);
-    //         fillBar($('.php + .percent'), 73);
-    //         fillBar($('.bs span'), 99);
-    //         fillBar($('.bs + .percent'), 99);
-    //         fillBar($('.node span'), 65);
-    //         fillBar($('.node + .percent'), 65);
-    //         fillBar($('.angular span'), 50);
-    //         fillBar($('.angular + .percent'), 50);
-    //     }
-    // });
-
     // Open UX/UI block
     uxElement = $('.ux');
 
