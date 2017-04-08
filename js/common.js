@@ -24,13 +24,22 @@ if (!$('.header').hasClass("no-index")) {
 
 // Change padding-top for main-text
 paddingTop = (windowHeight/2);
-$(".top").css( "padding-top", paddingTop - 250 );
+if (windowWidth > 1200) {
+    $(".top").css( "padding-top", paddingTop - 250 );
+} else {
+     $(".top").css( "padding-top", paddingTop - 200 );
+}
+
 
 $(document).ready(function () {
     // Preloader
     setTimeout(function(){
         $('body').addClass('loaded');
     }, 1);
+
+    // VideoBG footer
+     $(".player").mb_YTPlayer();
+     $(".pattern-overlay").css("min-height", windowHeight);
 
     // Menu navigation
     $('.top-menu a').mPageScroll2id();
