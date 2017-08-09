@@ -1,8 +1,7 @@
 # qwici.github.io
----
-## Personal portfolio
+Personal portfolio
 
-# TODO:
+## TODO:
 [ ] Fix markup  for mobile & tablet
 [ ] Contact form
 [ ] Social links
