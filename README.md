@@ -2,7 +2,7 @@
 Personal portfolio
 
 ## TODO:
-[ ] Fix markup  for mobile & tablet
-[ ] Contact form
-[ ] Social links
-[ ] Skills
+- [ ] Fix markup  for mobile & tablet
+- [ ] Contact form
+- [ ] Social links
+- [ ] Skills
