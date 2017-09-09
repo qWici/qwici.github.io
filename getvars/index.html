@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Vars</title>
+	<style>#output-wrapper,footer,main #form{position:absolute}#output-wrapper,main #form{top:50%;left:50%;transform:translate(-50%,-50%)}main #form button,main #form textarea{font-family:Arial}body,html{margin:0;padding:0}main #form{width:440px}main #form p{margin-top:0;color:#505050}main #form textarea{font-size:14px;overflow:hidden;width:400px;height:100px;margin-bottom:20px;padding:20px;resize:none;border:1px solid #e5e5e5;border-radius:5px;background-color:#f1f1f1}main #form textarea:focus{outline:0}#output-wrapper button,main #form button{font-size:18px;line-height:1;display:block;width:180px;margin:0 auto;padding:11px 0;text-transform:uppercase;color:#fff;border:none;background-color:#000;box-shadow:none}#output-wrapper button:active,#output-wrapper button:focus,#output-wrapper button:hover,main #form button:active,main #form button:focus,main #form button:hover{cursor:pointer}#output-wrapper{display:none;width:500px;border-radius:5px;border:1px solid #e5e5e5;height:500px}#output{width:100%;height:500px;overflow-y:scroll;margin-bottom:20px}#output p{overflow-wrap:break-word;word-wrap:break-word}footer{right:40px;bottom:40px}footer span{font-size:12px;text-transform:uppercase;color:#000}footer span a{text-decoration:none;color:#000}</style>
+
+</head>
+<body>
+
+<main>
+
+	<div id="form">
+		<p>Insert your CSS and get a list of the most commonly used properties</p>
+		<textarea name="css" id="css" placeholder="body{background-color: #FFF; color: #000}"></textarea>
+		<button onclick="start()">Get vars</button>
+	</div>
+	
+	<div id="output-wrapper">
+		<div id="output">
+			<ul></ul>
+		</div>
+		<button onclick="again()">Again</button>
+	</div>
+	
+	
+</main>
+
+<footer>
+	<span>by <a href="https://github.com/qWici" target="_blank">Vania Kucher</a></span>
+</footer>
+	
+<script>function again(){var e=document.getElementById("form"),t=document.getElementById("css"),n=(document.getElementById("css").value,document.getElementById("output-wrapper"));n.getElementsByTagName("ul");t.value="",e.style.display="block",n.style.display="none"}function start(){var e=document.getElementById("form"),t=document.getElementById("css").value,n=document.getElementById("output-wrapper"),l=n.getElementsByTagName("ul");getVal(t),countRepeat(all),end.sort(function(e,t){return t.count-e.count}),e.style.display="none",n.style.display="block",end.forEach(function(e,t,n){if(e.count>1){var o=document.createElement("li"),u="<p>property <strong>"+e.style+"</strong> count : <strong>"+e.count+"</strong></p>";o.innerHTML=u,l[0].appendChild(o)}else if(t===n.length-1){u="<p>Other properties are found only 1 time</p>";(o=document.createElement("li")).innerHTML=u,l[0].appendChild(o)}})}function getVal(e){for(;null!==(m=regex.exec(e));)m.index===regex.lastIndex&&regex.lastIndex++,all.push(m[1])}function countRepeat(e){e.sort();for(var t=null,n=0,l=0;l<e.length;l++)e[l]!=t?(n>0&&end.push({style:t,count:n}),t=e[l],n=1):n++;n>0&&end.push({style:t,count:n})}var regex=/:[ \n]*(.+?)[ \n]*(}|;|{)/gm,m,all=[],sort=[],end=[];
+</script>
+</body>
+</html>
